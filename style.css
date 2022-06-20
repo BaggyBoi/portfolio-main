@@ -1,0 +1,469 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Satoshi", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: whitesmoke;
+}
+
+body {
+  background-color: #1b1b1b;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#hd {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hd .hdP {
+  color: #b1b1b1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 130px;
+}
+
+#hd .hdP a {
+  text-decoration: none;
+}
+
+#hd .hdP:hover {
+  color: whitesmoke;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main {
+  width: 100%;
+  height: 2500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #wlcmD {
+  font-size: 40px;
+}
+
+#main #abtMeD {
+  width: 1200px;
+  height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main #abtMeD #abtMe {
+  width: 700px;
+  height: 450px;
+  font-size: 35px;
+}
+
+#main #abtMeD #pfpImg {
+  width: 450px;
+  height: 450px;
+  background-image: url("img/pfp.png");
+  background-size: cover;
+}
+
+#main #knwldgD {
+  width: 1200px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #knwldgD #langMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 900px;
+}
+
+#main #knwldgD .lD {
+  width: 132px;
+  height: 150px;
+  background-size: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main #knwldgD .lD:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#main #knwldgD #html {
+  background-image: url("img/html.svg");
+}
+
+#main #knwldgD #css {
+  background-image: url("img/css.svg");
+}
+
+#main #knwldgD #js {
+  background-image: url("img/js.svg");
+}
+
+#main #knwldgD #py {
+  background-image: url("img/py.svg");
+  width: 128px;
+  height: 128px;
+}
+
+#main #knwldgD #cs {
+  background-image: url("img/cs.svg");
+}
+
+#main #projD {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+}
+
+#main #projD #projMain {
+  width: 800px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #projD #projMain .projItem {
+  width: 250px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main #projD #projMain .projItem .proj {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
+}
+
+#main #projD #projMain .projItem .projDesc {
+  font-size: 25px;
+  text-align: center;
+  color: gray;
+}
+
+#main #projD #projMain .projItem:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  background-color: #2e2e2e;
+}
+
+#main #socialsD {
+  width: 1400px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #socialsD #socialsMain {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main #socialsD #socialsMain .sI {
+  width: 220px;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main #socialsD #socialsMain .sI .sImg {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+
+#main #socialsD #socialsMain .sI #discord {
+  height: 70px;
+  background-image: url("img/discord.svg");
+}
+
+#main #socialsD #socialsMain .sI #revolt {
+  background-image: url("img/revolt.png");
+}
+
+#main #socialsD #socialsMain .sI #reddit {
+  background-image: url("img/reddit.svg");
+}
+
+#main #socialsD #socialsMain .sI #xbox {
+  background-image: url("img/xbox.svg");
+}
+
+#main #socialsD #socialsMain .sI #github {
+  background-image: url("img/github.svg");
+  background-color: white;
+  border-radius: 100%;
+}
+
+#main #socialsD #socialsMain .sI:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+  background-color: #2e2e2e;
+}
+
+#main #goUp {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #2e2e2e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+#main #goUp:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+@media only screen and (max-width: 800px) {
+  #footer {
+    margin-top: 100px;
+  }
+  body {
+    overflow-x: hidden !important;
+  }
+  #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: 4500px;
+    margin: 0 !important;
+  }
+  #hd {
+    width: 100% !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  #langMain {
+    width: 300px !important;
+    -webkit-box-pack: space-evenly !important;
+        -ms-flex-pack: space-evenly !important;
+            justify-content: space-evenly !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 600px !important;
+  }
+  #pfpImg {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  #knwldgD {
+    width: 300px !important;
+    height: 1000px !important;
+    margin: 0 !important;
+  }
+  #abtMeD {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 300px !important;
+    height: 700px !important;
+  }
+  #abtMe {
+    width: 300px !important;
+    font-size: 25px !important;
+  }
+  #socialsMain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 300px !important;
+    height: 1200px !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #socialsD {
+    width: 400px !important;
+    height: 1250px !important;
+  }
+  .hdP {
+    margin: 0 !important;
+    width: 75   px !important;
+  }
+  #projMain {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: 500px !important;
+    width: 400px !important;
+  }
+  #projD {
+    width: 300px !important;
+    height: 800px !important;
+  }
+  #wlcmD {
+    width: 300px !important;
+    font-size: 20px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
